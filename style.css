@@ -1,0 +1,509 @@
+/*Estilo geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.imageLogo {
+    border-radius: 10px;
+    width: 100px;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.Contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: grey;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+button:hover,
+form .enviar input:hover {
+    box-shadow: 0px 0px 8px #524b4b;
+    transform: scale(1.05);
+}
+
+
+.social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ddd8d8;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+
+
+
+/* Estilo cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a {
+    color: #707070;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.Contato button:hover {
+    box-shadow: 0px 0px 8px #524b4b;
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* arrumando imagens */
+
+header .imageLogo {
+    border-radius: 10px;
+}
+
+
+.imageEu {
+    width: 300px;
+    border-radius: 50px;
+}
+
+/* fecha arrumando imgs */
+
+
+
+
+
+/* estilo do topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.topo-do-site .txt-topo-site h1 {
+    color: #fff;
+    font-size: 42px;
+
+
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+
+}
+
+
+
+
+
+/* Estilos das Formações */
+
+section.formações {
+    padding: 40px 4%;
+}
+
+
+section.formações .flex {
+    gap: 60px;
+}
+
+
+.formações .formações-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+
+.formações .formações-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff6b;
+}
+
+
+.formações .formações-box i {
+    font-size: 70px;
+}
+
+
+.formações .formações-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+
+
+/* arrumando imagem 2 */
+.imageEu2 {
+    width: 300px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* Estilo do sobreMim */
+section.sobreMim {
+    padding: 80px 4%;
+
+}
+
+
+section.sobreMim .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobreMim .txt-sobre {
+    color: #fff;
+}
+
+
+.sobreMim .txt-sobre h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.sobreMim .txt-sobre {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+
+
+
+/* Estilo portfólio */
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff33;
+}
+
+
+section.portfolio .flex {
+    gap: 80px;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+/* era pra fazer efeito de rolagem nas imagens mas não está indo pelas medidas das imagens (eu acho) */
+
+.imgPortfolio {
+    width: 360px;
+    height: 460px;
+    background-color: #707070;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.imgPortfolio:hover {
+    background-position: 100% 100%;
+}
+
+
+
+
+
+/* medidas do efeito visual */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000002d;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+
+
+
+/* Estilo formulário */
+section.formulario {
+    padding: 80px 4%;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #333333;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    color: #fff;
+}
+
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+form .enviar input {
+    width: 120px;
+    background-color: #524b4b;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+
+
+/* Estilo do rodapé */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff33;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+
+footer .linhafooter {
+    padding: 40px 0;
+    border-bottom: 2px solid #fff;
+}
+
+footer .linhafooter p i {
+    color: #fff;
+    font-size: 22px;
+}
+
+
+footer .linhafooter p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+/* tornando responsivo */
+@media screen and (max-width: 1020px) {
+
+    /* classe gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+
+    /* cabeçalho */
+    .menu-desktop,
+    .Contato {
+        display: none;
+    }
+
+
+
+    /*topo do site */
+    section.topo-do-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+
+    /* minhas formaçoes */
+    section.formações {
+        padding: 40px 8%;
+
+    }
+
+
+    /* sobre mim */
+    section.sobreMim {
+        padding: 80px 8%;
+    }
+
+    .sobreMim .txt-sobre h2 {
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+
+    .social {
+        text-align: center;
+    }
+
+
+    .imgsobre img {
+        width: 100%;
+    }
+
+
+    /* portfolio */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+
+    .imgPortfolio {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+
+    section.portfolio .flex {
+        gap: 60px;
+
+    }
+
+    
+    /* rodapé */
+    footer .flex {
+        flex-direction: column;
+    }
+
+
+    footer .linhafooter {
+        text-align: center;
+    }
+
+}
